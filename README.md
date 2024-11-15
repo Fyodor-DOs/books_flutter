@@ -1,16 +1,38 @@
-# books_flutter
+Nama    : Ahmed Fathir Syafaat
 
-A new Flutter project.
+Kelas   : TI - 3H
 
-## Getting Started
+NIM     : 2241720083
 
-This project is a starting point for a Flutter application.
+# #11 | Pemrograman Asynchronous
 
-A few resources to get you started if this is your first Flutter project:
+## Praktikum 1: Dasar State dengan Model-View
+### Soal 1
+![alt text](assets/images/soal1.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Soal 2
+![alt text](assets/images/soal2a.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](assets/images/soal2b.png)
+
+### Soal 3
+Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+- substring
+```
+result = value.body.toString().substring(0, 450);
+```
+> - value.body: Merupakan isi dari respons HTTP yang diterima dari API. 
+> - toString(): Memastikan bahwa data tersebut dalam bentuk string meskipun value.body sudah string.
+> - substring(0, 450): Fungsi ini mengambil potongan teks dari karakter ke-0 hingga ke-449 dari string respons. Membatasi panjang string untuk ditampilkan di aplikasi agar tidak terlalu panjang, karena respons API biasanya besar.
+
+- catchError
+```
+.catchError((_) {
+    result = 'An error occured';
+    setState(() {});
+});
+```
+> Digunakan untuk menangani kesalahan yang terjadi saat menjalankan fungsi asinkron. Misalnya: Tidak ada koneksi internet, URL salah, dan Respons gagal dari server.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![alt text](assets/images/soal3.gif)
