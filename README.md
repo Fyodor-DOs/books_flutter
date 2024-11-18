@@ -72,3 +72,15 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ### Soal 8
 Jelaskan maksud perbedaan kode langkah 1 dan 4!
 > Langkah 1 menggunakan FutureGroup untuk mengelola beberapa Future dengan menambahkannya satu per satu dan menutup grup secara manual sebelum menunggu hasilnya. Langkah 4 mengganti ini dengan Future.wait yang langsung menunggu daftar Future selesai secara paralel tanpa perlu pengelolaan manual.
+
+## Praktikum 5: Menangani Respon Error pada Async Code
+
+### Soal 9
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![alt text](assets/images/soal9.gif)
+
+### Soal 10
+Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+![alt text](assets/images/soal10.gif)
+
+> Saat menjalankan handleError(), aplikasi menampilkan pesan error setelah penundaan 2 detik dan mencetak "Complete" di konsol. Perbedaan antara langkah 1 dan langkah 4 adalah bahwa returnError() hanya melempar error tanpa penanganan di dalamnya, sedangkan handleError() menangani error dengan blok try-catch, memperbarui UI dengan pesan error, dan memastikan blok finally dieksekusi untuk mencetak "Complete" di terminal.
