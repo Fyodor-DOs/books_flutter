@@ -36,3 +36,11 @@ result = value.body.toString().substring(0, 450);
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![alt text](assets/images/soal3.gif)
+
+## Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+![alt text](assets/images/soal4.gif)
+
+### Soal 4
+Jelaskan maksud kode langkah 1 dan 2 tersebut!
+> - Langkah 1: Membuat tiga fungsi asynchronous (returnOneAsync, returnTwoAsync, returnThreeAsync) yang masing-masing mengembalikan nilai setelah penundaan 3 detik, mensimulasikan operasi lambat.
+> - Langkah 2: Membuat fungsi count() untuk menjalankan ketiga fungsi tersebut secara berurutan menggunakan await, menjumlahkan hasilnya, dan memperbarui tampilan dengan hasil total.
