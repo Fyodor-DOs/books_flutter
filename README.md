@@ -62,3 +62,13 @@ Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![alt text](assets/images/soal6.gif)
+
+## Praktikum 4: Memanggil Future secara paralel
+
+### Soal 7
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![alt text](assets/images/soal7.gif)
+
+### Soal 8
+Jelaskan maksud perbedaan kode langkah 1 dan 4!
+> Langkah 1 menggunakan FutureGroup untuk mengelola beberapa Future dengan menambahkannya satu per satu dan menutup grup secara manual sebelum menunggu hasilnya. Langkah 4 mengganti ini dengan Future.wait yang langsung menunggu daftar Future selesai secara paralel tanpa perlu pengelolaan manual.
