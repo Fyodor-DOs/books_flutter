@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,13 +24,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-Future<Response> getData() async {
-  const authority = 'www.googleapis.com';
-  const path = '/books/v1/volumes/s7_nDQAAQBAJ';
-  Uri url = Uri.https(authority, path);
-  return http.get(url);
-}
-
 class FuturePage extends StatefulWidget {
   const FuturePage({super.key});
 
@@ -38,6 +32,13 @@ class FuturePage extends StatefulWidget {
 }
 
 class _FuturePageState extends State<FuturePage> {
+  Future<Response> getData() async {
+    const authority = 'www.googleapis.com';
+    const path = '/books/v1/volumes/s7_nDQAAQBAJ';
+    Uri url = Uri.https(authority, path);
+    return http.get(url);
+  }
+
   String result = '';
 
   Future<int> returnOneAsync() async {
@@ -66,6 +67,23 @@ class _FuturePageState extends State<FuturePage> {
     });
   }
 
+  late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (_) {
+      completer.completeError({});
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +96,13 @@ class _FuturePageState extends State<FuturePage> {
             const Spacer(),
             ElevatedButton(
                 onPressed: () {
-                  count();
+                  getNumber().then((value) {
+                    setState(() {
+                      result = value.toString();
+                    });
+                  }).catchError((e) {
+                    result = 'An error occurred';
+                  });
                 },
                 child: const Text('GO!')),
             const Spacer(),
