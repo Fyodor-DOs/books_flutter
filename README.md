@@ -84,3 +84,16 @@ Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya?
 ![alt text](assets/images/soal10.gif)
 
 > Saat menjalankan handleError(), aplikasi menampilkan pesan error setelah penundaan 2 detik dan mencetak "Complete" di konsol. Perbedaan antara langkah 1 dan langkah 4 adalah bahwa returnError() hanya melempar error tanpa penanganan di dalamnya, sedangkan handleError() menangani error dengan blok try-catch, memperbarui UI dengan pesan error, dan memastikan blok finally dieksekusi untuk mencetak "Complete" di terminal.
+
+## Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+## Soal 11
+Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+![alt text](assets/images/soal11.png)
+
+## Soal 12
+Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+> Tidak, koordinat GPS tidak akan muncul saat dijalankan di browser karena paket geolocator lebih cocok untuk platform mobile seperti Android dan iOS. Browser membutuhkan izin melalui API geolokasi bawaan (navigator.geolocation) yang tidak sepenuhnya didukung oleh geolocator tanpa konfigurasi tambahan.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![alt text](assets/images/soal12.gif)
