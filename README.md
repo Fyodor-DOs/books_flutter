@@ -129,3 +129,11 @@ Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README. 
 ![alt text](assets/images/soal16.gif)
 
+## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
+
+### Soal 17
+Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+> Saat setiap tombol ditekan, sebuah dialog muncul dengan pilihan warna. Ketika salah satu tombol warna dipilih, warna latar belakang aplikasi berubah sesuai pilihan. Berbeda dengan praktikum sebelumnya untuk praktikum ini dialognya menggunakan Navigator.pop untuk mengembalikan warna pilihan, dan perubahan tersebut diterapkan pada state aplikasi melalui setState().
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. 
+![alt text](assets/images/soal17.gif)

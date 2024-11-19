@@ -1,4 +1,5 @@
 import 'package:books_flutter/geolocation.dart';
+import 'package:books_flutter/navigation_dialog.dart';
 import 'package:books_flutter/navigation_first.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const FuturePage(),
       // home: const LocationScreen(),
-      home: const NavigationFirst(),
+      // home: const NavigationFirst(),
+      home: const NavigationDialogScreen(),
     );
   }
 }
