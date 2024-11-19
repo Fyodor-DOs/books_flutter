@@ -115,3 +115,17 @@ Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![alt text](assets/images/soal14.gif)
 
+## Praktikum 8: Navigation route dengan Future Function
+
+### Soal 15
+Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+![alt text](assets/images/soal15.png)
+
+### Soal 16
+Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+> Ketika tombol diklik, layar kembali ke Navigation First Screen dengan warna latar berubah sesuai tombol yang dipilih, karena nilai warna dikembalikan melalui Navigator.pop dan diperbarui dengan setState.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. 
+![alt text](assets/images/soal16.gif)
+

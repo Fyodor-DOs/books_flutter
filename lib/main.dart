@@ -1,4 +1,5 @@
 import 'package:books_flutter/geolocation.dart';
+import 'package:books_flutter/navigation_first.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // home: const FuturePage(),
-      home: const LocationScreen(),
+      // home: const LocationScreen(),
+      home: const NavigationFirst(),
     );
   }
 }
