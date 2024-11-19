@@ -89,6 +89,7 @@ Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya?
 
 ## Soal 11
 Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
 ![alt text](assets/images/soal11.png)
 
 ## Soal 12
@@ -97,3 +98,20 @@ Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 ![alt text](assets/images/soal12.gif)
+
+## Praktikum 7: Manajemen Future dengan FutureBuilder
+
+### Soal 13
+Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+> FutureBuilder memberikan cara deklaratif untuk menangani data asinkron, sedangkan setState memerlukan pengelolaan manual. Hal inilah yang membuat tampilan dan logika asinkron lebih terintegrasi di praktikum ini.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![alt text](assets/images/soal13.gif)
+
+### Soal 14
+Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+> UI pada langkah ini menampilkan pesan "Something terrible happened!" jika terjadi error, sedangkan sebelumnya tidak ada penanganan error, sehingga UI akan kosong jika masalah muncul.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![alt text](assets/images/soal14.gif)
+
